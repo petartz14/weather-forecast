@@ -23,9 +23,16 @@
                         />
                     </DisclosureButton>
                 </div>
-                <div class="flex flex-1 sm:items-stretch sm:justify-start">
+                <div
+                    class="flex flex-1 sm:items-stretch justify-center sm:justify-start"
+                >
                     <div class="flex flex-shrink-0 items-center">
                         <CloudIcon class="h-10 w-10 text-teal-800" />
+                        <span
+                            class="pl-2 font-bold uppercase tracking-widest hidden md:block"
+                        >
+                            Weather Forecast
+                        </span>
                     </div>
                     <div v-if="user" class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
