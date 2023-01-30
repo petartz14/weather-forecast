@@ -1,11 +1,11 @@
 <script setup lang="ts">
 withDefaults(
     defineProps<{
-        color: string;
-        variant: string;
-        size: string;
-        rounded: boolean;
-        type: any;
+        color?: string;
+        variant?: string;
+        size?: string;
+        rounded?: boolean;
+        type?: any;
     }>(),
     {
         color: "gray",
