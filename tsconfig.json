@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "strict": false,
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true,
+      "lib": [
+          "esnext",
+          "dom",
+          "dom.iterable",
+          "scripthost"
+      ],
+      "baseUrl": ".",
+      "paths": {
+          "@/*": [
+              "resources/js/*"
+          ]
+      }
+  },
+  "include": [
+      "resources/js/Admin/**/*.vue",
+      "resources/js/Admin/**/*.ts",
+      "resources/js/Admin/**/*.d.ts"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+}
