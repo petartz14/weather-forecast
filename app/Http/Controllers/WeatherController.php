@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\WeatherRequest;
 use App\Models\Weather;
 use App\Services\WeatherService;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -28,12 +30,18 @@ class WeatherController extends Controller
       return inertia('Weathers/SearchWeather');
     }
 
-    public function store(Request $request, WeatherService $weatherService)
+    public function store(WeatherRequest $request, WeatherService $weatherService)
     {
-        $response = $weatherService->searchWeather($request->input('city'));
+        try
+        {
+            $response = $weatherService->searchWeather($request->input('search'));
 
-        return redirect()->route('weathers.show', [
-          'weather' => $response->id
-        ]);
+            return redirect()->route('weathers.show', [
+              'weather' => $response->id
+            ]);
+        } catch (Exception $e)
+        {
+          return redirect()->back()->withErrors(['message' => 'The city not found']);
+        }
     }
 }
