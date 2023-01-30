@@ -24,13 +24,29 @@ DB_USERNAME=<database username>
 DB_PASSWORD=<databse password>
 
 # Then, migrate table into database
-php artisan migrate:refresh --seed
+php artisan migrate
 
 # Then, install node dependencies
 npm install
 
 # Finally, serve with hot reload at http://localhost:3000/
 npm run dev
+```
+
+## Use Laravel Valet
+
+```bash
+#Install laravel valet
+composer global require laravel/valet
+
+#Run valet install
+valet install
+
+#link your local repository
+valet link weather-forecast
+
+#Load the domain test into your browser
+http://weather-forecast.test
 ```
 
 ## Packages Installed
