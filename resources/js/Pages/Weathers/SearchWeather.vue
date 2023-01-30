@@ -24,7 +24,7 @@ const searchWeather = () => {
 <template>
     <AppLayout title="Welcome">
         <div class="pt-24 md:flex justify-center">
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 pt-10 bg-gray-50 p-6 shadow rounded">
                 <div class="pb-5 text-center hidden md:block">
                     {{ user.name }}
                     <p class="py-1">{{ user.github_url }}</p>

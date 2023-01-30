@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
     <Head :title="title" />
-    <div class="relatve overflow-hidden bg-gray-100 h-screen">
+    <div class="relatve overflow-hidden bg-gray-200 h-screen">
         <Navbar />
         <main class="overflow-auto mx-auto max-w-7xl">
             <div class="max-w-none mx-auto p-6 lg:p-8">

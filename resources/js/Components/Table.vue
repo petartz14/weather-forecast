@@ -25,14 +25,14 @@ const getItem = (value, key) => {
             <div
                 class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
             >
-                <div class="overflow-hidden border-b border-gray-200 shadow">
-                    <table class="min-w-full divide-y divide-gray-200">
-                        <thead class="bg-gray-200">
+                <div class="overflow-hidden border-b border-gray-300 shadow">
+                    <table class="min-w-full divide-y divide-gray-300">
+                        <thead class="bg-gray-600">
                             <tr>
                                 <th
                                     v-for="property in properties"
                                     scope="col"
-                                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-600 uppercase"
+                                    class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-100 uppercase"
                                     :class="[property.class]"
                                 >
                                     {{ property.label }}

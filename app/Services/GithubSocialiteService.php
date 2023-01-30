@@ -33,7 +33,7 @@ class GithubSocialiteService
 
         Auth::login($newUser);
 
-        return redirect()->route('weathers.index');
+        return redirect()->route('weathers.searchWeather');
  
     } catch (Exception $e) {
         return $e->getMessage();
