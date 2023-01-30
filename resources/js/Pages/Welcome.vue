@@ -1,6 +1,11 @@
 <script setup>
 import AppLayout from "@/Layouts/App.vue";
 import Button from "@/Components/Button.vue";
+import { router } from "@inertiajs/vue3";
+
+const login = () => {
+    router.get(route("auth.github"));
+};
 </script>
 
 <template>
@@ -11,7 +16,7 @@ import Button from "@/Components/Button.vue";
                 with your Github user to use the application and view weather in
                 your city.
             </div>
-            <Button type="button">Login</Button>
+            <Button @click="login" type="button">Login</Button>
         </div>
     </AppLayout>
 </template>
