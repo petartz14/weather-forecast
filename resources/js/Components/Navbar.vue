@@ -29,7 +29,8 @@
                     <div class="flex flex-shrink-0 items-center">
                         <CloudIcon class="h-10 w-10 text-teal-800" />
                         <span
-                            class="pl-2 font-bold uppercase tracking-widest hidden md:block"
+                            class="pl-2 font-bold uppercase tracking-widest"
+                            :class="{ block: !user, 'hidden md:block': user }"
                         >
                             Weather Forecast
                         </span>
