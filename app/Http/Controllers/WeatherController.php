@@ -7,7 +7,6 @@ use App\Models\Weather;
 use App\Services\WeatherService;
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class WeatherController extends Controller
 {
